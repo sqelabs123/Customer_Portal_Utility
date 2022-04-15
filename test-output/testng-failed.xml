@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="password" value="C123456789@c"/>
+  <parameter name="userId" value="utbr8billing1481@yopmail.com"/>
+  <parameter name="url" value="https://utbr8.utilibill.com.au/billing/"/>
+  <test name="Test(failed)">
+    <parameter name="password" value="C123456789@c"/>
+    <parameter name="userId" value="utbr8billing1481@yopmail.com"/>
+    <parameter name="url" value="https://utbr8.utilibill.com.au/billing/"/>
+    <classes>
+      <class name="Customer_Portal.Portal_Test">
+        <methods>
+          <include name="logout"/>
+          <include name="Customer_Account_Details"/>
+          <include name="Customer_Services"/>
+          <include name="Login"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- Customer_Portal.Portal_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

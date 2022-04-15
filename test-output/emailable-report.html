@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">16</td><td class="numi">16</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">719.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">Customer_Portal.Portal_Test</td><td><a href="#m1"><b>Customer_Services</b>  </a></td><td class="numi">1</td><td>1644409206759</td><td class="numi">19708</td></tr><tr class="failedodd"><td><a href="#m2"><b>Customer_Account_Details</b>  </a></td><td class="numi">1</td><td>1644409270176</td><td class="numi">68698</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="16">Customer_Portal.Portal_Test</td><td><a href="#m3"><b>Create_Customer</b>  </a></td><td class="numi">1</td><td>1644408841448</td><td class="numi">34298</td></tr><tr class="passedodd"><td><a href="#m4"><b>Add_Services</b>  </a></td><td class="numi">1</td><td>1644408875750</td><td class="numi">20867</td></tr><tr class="passedodd"><td><a href="#m5"><b>Add_Reads</b>  </a></td><td class="numi">1</td><td>1644408896622</td><td class="numi">118597</td></tr><tr class="passedodd"><td><a href="#m6"><b>Bill_Run_Cycle</b>  </a></td><td class="numi">1</td><td>1644409015222</td><td class="numi">16136</td></tr><tr class="passedodd"><td><a href="#m7"><b>Bill_Run</b>  </a></td><td class="numi">1</td><td>1644409031364</td><td class="numi">83636</td></tr><tr class="passedodd"><td><a href="#m8"><b>enablE_Customer_Portal_Services</b>  </a></td><td class="numi">1</td><td>1644409115003</td><td class="numi">65629</td></tr><tr class="passedodd"><td><a href="#m9"><b>Login_Customer_Portal</b>  </a></td><td class="numi">1</td><td>1644409180635</td><td class="numi">26115</td></tr><tr class="passedodd"><td><a href="#m10"><b>Customer_Charges</b>  </a></td><td class="numi">1</td><td>1644409226486</td><td class="numi">8367</td></tr><tr class="passedodd"><td><a href="#m11"><b>Customer_Statements</b>  </a></td><td class="numi">1</td><td>1644409234855</td><td class="numi">16256</td></tr><tr class="passedodd"><td><a href="#m12"><b>Customer_Transactions</b>  </a></td><td class="numi">1</td><td>1644409251116</td><td class="numi">1722</td></tr><tr class="passedodd"><td><a href="#m13"><b>Customer_Usage_Profile</b>  </a></td><td class="numi">1</td><td>1644409252840</td><td class="numi">17334</td></tr><tr class="passedodd"><td><a href="#m14"><b>Customer_Service_Settings</b>  </a></td><td class="numi">1</td><td>1644409338880</td><td class="numi">9450</td></tr><tr class="passedodd"><td><a href="#m15"><b>Help_And_FAQ</b>  </a></td><td class="numi">1</td><td>1644409348332</td><td class="numi">18258</td></tr><tr class="passedodd"><td><a href="#m16"><b>Contact_US</b>  </a></td><td class="numi">1</td><td>1644409366593</td><td class="numi">19844</td></tr><tr class="passedodd"><td><a href="#m17"><b>DisablE_Customer_Portal_Services</b>  </a></td><td class="numi">1</td><td>1644409386439</td><td class="numi">99396</td></tr><tr class="passedodd"><td><a href="#m18"><b>Customer_Portal_Menu</b>  </a></td><td class="numi">1</td><td>1644409485837</td><td class="numi">20265</td></tr>
+</table>
+<h1>Test</h1>
+<h2 id="m1">Customer_Portal.Portal_Test:Customer_Account_Details</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+*  CustomeR change password button is not displayed-----Expected condition failed: waiting for element to be clickable: By.xpath: .(//*[@id="content"]/div/div[2]/a/text())[2] (tried for 60 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'HPENVY', ip: '172.16.5.221', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir=C:\Users\Tester\AppData\Local\Temp\scoped_dir3056_31222}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=98.0.4758.81, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 4ecdf9917c5588c5fdc974b01e58ce7c<br/>
+<h3>Failure</h3>
+<p>null</p>
+Customer_Portal.Portal_Test.Customer_Account_Details(Portal_Test.java:660)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">Customer_Portal.Portal_Test:Customer_Services</h2>
+<div style="padding-left:3em">
+<p>invalid selector: Unable to locate an element with the xpath expression .//*[text()=&apos;Success! This meter number is now disconnected. because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;.//*[text()=&apos;Success! This meter number is now disconnected.&apos; is not a valid XPath expression.
+  (Session info: chrome=98.0.4758.81)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 53 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;HPENVY&apos;, ip: &apos;172.16.5.221&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91), userDataDir=C:\Users\Tester\AppData\Local\Temp\scoped_dir3056_31222}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=98.0.4758.81, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 4ecdf9917c5588c5fdc974b01e58ce7c
+*** Element info: {Using=xpath, value=.//*[text()=&apos;Success! This meter number is now disconnected.}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+<br/>at Customer_Portal.Portal_Test.Customer_Services(Portal_Test.java:499)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">Customer_Portal.Portal_Test:Customer_Charges</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">Customer_Portal.Portal_Test:enablE_Customer_Portal_Services</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">Customer_Portal.Portal_Test:Contact_US</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">Customer_Portal.Portal_Test:Customer_Statements</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">Customer_Portal.Portal_Test:Login_Customer_Portal</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">Customer_Portal.Portal_Test:Bill_Run_Cycle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">Customer_Portal.Portal_Test:Customer_Service_Settings</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">Customer_Portal.Portal_Test:Customer_Usage_Profile</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">Customer_Portal.Portal_Test:Add_Services</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">Customer_Portal.Portal_Test:Help_And_FAQ</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">Customer_Portal.Portal_Test:Create_Customer</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">Customer_Portal.Portal_Test:Customer_Transactions</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">Customer_Portal.Portal_Test:Bill_Run</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">Customer_Portal.Portal_Test:Add_Reads</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">Customer_Portal.Portal_Test:Customer_Portal_Menu</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">Customer_Portal.Portal_Test:DisablE_Customer_Portal_Services</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

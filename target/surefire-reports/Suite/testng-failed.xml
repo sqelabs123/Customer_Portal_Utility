@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <parameter name="password" value="C123456789@c"/>
+  <parameter name="userId" value="winenergy.test141@gmail.com"/>
+  <parameter name="url" value="https://winenergy.utilibill.com.au/winenergy/"/>
+  <test name="Test(failed)">
+    <parameter name="password" value="C123456789@c"/>
+    <parameter name="userId" value="winenergy.test141@gmail.com"/>
+    <parameter name="url" value="https://winenergy.utilibill.com.au/winenergy/"/>
+    <classes>
+      <class name="Customer_Portal.WorkFlowSetting">
+        <methods>
+          <include name="logout"/>
+          <include name="WorkFlow_Enable_OR_Disable"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- Customer_Portal.WorkFlowSetting -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

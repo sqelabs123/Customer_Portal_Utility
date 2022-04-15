@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+   
+    	<parameter name="url" value="https://utbr8.utilibill.com.au/billing/"></parameter>
+	<parameter name="userId" value="utbr8billing1481@yopmail.com"></parameter> 
+	<parameter name="password" value="C123456789@c"></parameter>
+	
+   <classes> 
+   
+     	       <class name="Customer_Portal.Portal_Test"/>
+	 <!--  
+	    1.  <class name="Customer_Portal.Portal_Test"/>
+	    2.  <class name="Customer_Portal.WorkFlowSetting"/>
+	    3.  <class name="Customer_Portal.Portal_Test"/> 
+      
+      
+       <class name="Customer_Portal.admin_trial"/>
+      <class name="Customer_Portal.CustomerPortalMenu"/>
+	  -->		
+   </classes>                                    
+   </test>                                      
+   </suite>                                     
